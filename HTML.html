@@ -1,36 +1,80 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>加密网站</title>
-    </head>
-    <table>
-        <script>
-        {
-            var let = new let({ A:"113", B:"158", C:"136", D:"135", E:"134", F:"146", G:"157", H:"168", I:"189", J:"179", K:"180", L:"19-", M:"170", N:"169", O:"190", P:"10-", Q:"112", R:"145", S:"124", T:"156", U:"178", V:"147", W:"123", X:"125", Y:"167", Z:"114", a:"013", b:"058", c:"036", d:"035", e:"034", f:"046", g:"057", h:"068", i:"089", j:"079", k:"080", l:"09-", m:"070", n:"069", o:"090", p:"00-", q:"012", r:"045", s:"024", t:"056", u:"078", v:"047", w:"023", x:"025", y:"067", z:"014", 1:"011", 2:"022", 3:"033", 4:"044", 5:"055", 6:"066", 7:"077", 8:"088", 9:"099", 0:"000", "!":"011", "@":"022", "#":"033", "$":"044", "%":"055", "^":"066", "&":"077", "*":"088", "(":"099", ")":"000", "-":"0--", "_":"1--", ",":"08-", "<":"18-", " ":"030"})
-            var letter=document.getElementById("test");
-            var code=document.getElementById("code");
-            var output=document.getElementById("output");
-            var out=0;
-            function l()
-            {
-                for(var i=0;i<length(letter);i=i+1)
-                {
-                    out=out+gete
-                }
-                output.innerHTML=let.f;
-            }
-        }
-        </script>
-        <h1>加密网站</h1>
-        <p>请输入字母：</p>
-        <form name =“test”>
-        <input type =“text” name =“letter”><br>
-        <button name="enter" onclick="l()">转换</button>
-        <p>请输入代码：</p>
-        <form name =“test1”>
-        <input type =“text1” name =“code”><br>
-        <button name="enter" onclick="c()">转换</button>
-        <p name="output">noscript!!!</p>
-        </table>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FPS Test Page</title>
+  </head>
+  <body>
+    <script> // 创建 fps 面板展示元素
+      var fpsPanel = document.createElement("div");
+      fpsPanel.setAttribute("id", "fps");
+      fpsPanel.style.position = "fixed";
+      fpsPanel.style.left = "3px";
+      fpsPanel.style.top = "3px";
+      fpsPanel.style.color = "black";
+      fpsPanel.style.zIndex = 10000;
+      // 将面板插入到 body
+      document.body.append(fpsPanel);
+      // fps 监测逻辑实现
+      var showFPS = (function () {
+        var requestAnimationFrame =
+          window.requestAnimationFrame ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame ||
+          window.oRequestAnimationFrame ||
+          window.msRequestAnimationFrame ||
+          function (callback) {
+            window.setTimeout(callback, 1000 / 60);
+          };
+        var e, pe, pid, fps, last, offset, step, appendFps;
+
+        fps = 0;
+        last = Date.now();
+        step = function () {
+          offset = Date.now() - last;
+          fps += 1;
+          if (offset >= 1000) {
+            last += offset;
+            appendFps(fps);
+            fps = 0;
+          }
+          requestAnimationFrame(step);
+        };
+        appendFps = function (fps) {
+          // 打印 fps
+          //console.log(fps + "FPS");
+          // 修改面板显示的值
+          //fpsPanel.innerHTML = fps + "FPS";
+        };
+        step();
+      })(); </script>
+  </body>
+</html>
+<html lang="ru" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22ru%22%7D%7D">
+<head>
+<title>Game Hall-地铁跑酷</title>
+<link rel="shortcut icon" href="https://s1.ax1x.com/2022/12/29/pSpSuFI.png">
+<meta data-n-head="ssr" charset="utf-8">
+<meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 shrink-to-fit=no">
+<meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes">
+<meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="Игры Онлайн - ИгроУтка">
+<meta data-n-head="ssr" data-hid="theme-color" name="theme-color" content="#3C106A"><meta data-n-head="ssr" data-hid="description" name="description" content="Монако является очень привлекательным местом для многих людей. Ярые любители приключений Сабвей Серферы тоже решили отправиться сюда, для того чтобы, как обычно, покорить местный метрополитен. Красочн"><meta data-n-head="ssr" name="robots" content="noindex, nofollow"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico"><link data-n-head="ssr" rel="apple-touch-icon" type="image/png" sizes="512x512" href="/icon.png"><link data-n-head="ssr" rel="preconnect" href="https://static.igroutka.ru"><link data-n-head="ssr" rel="preconnect" href="https://cdn.jsdelivr.net"><link data-n-head="ssr" rel="preconnect" href="https://mc.yandex.ru"><link data-n-head="ssr" rel="preconnect" href="https://mc.webvisor.org"><link data-n-head="ssr" rel="preconnect" href="https://yastatic.net"><link data-n-head="ssr" rel="preconnect" href="https://pagead2.googlesyndication.com">
+<link data-n-head="ssr" rel="manifest" href="/build/manifest.25f40c49.json" data-hid="manifest">
+<link data-n-head="ssr" rel="canonical" href="https://igroutka.ru/igry-subway-surfers/46378-sabvey-serf-monako.html">
+<style data-vue-ssr-id="4c2ad7e8:0 11f6e936:0">body{margin:0}#loader{font-family:"Segoe UI","Source Sans Pro",Calibri,Candara,Arial,sans-serif;background:#000;z-index:1;width:100%;height:100%;height:100vh;width:100vw;position:relative;overflow:hidden}#loader iframe{height:100vh;width:100vw;border:none;background:#000;z-index:8}.bot_fullscreen{height:25px;width:25px;position:absolute;bottom:0;right:0;cursor:pointer;padding:9px;z-index:999}.bot_fullscreen:hover{color:#000!important}.g-play-but{position:absolute;bottom:10px;left:10px;z-index:9}.g-play-but a{line-height:24px;display:inline-block;color:#fff}.g-play-but a:hover{text-decoration:none}
+.spinner{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:9999}@-webkit-keyframes ldio-anim{0%{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(1turn)}}@keyframes ldio-anim{0%{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(1turn)}}.ldio div{position:absolute;width:70px;height:70px;border:8px solid #fff;border-top-color:transparent;border-radius:50%;-webkit-animation:ldio-anim .5555555555555556s linear infinite;animation:ldio-anim .5555555555555556s linear infinite;top:50px;left:50px}.spinner-rolling{width:50px;height:50px;display:inline-block;overflow:hidden;background:none}.ldio{width:100%;height:100%;position:relative;transform:translateZ(0) scale(.5);-webkit-backface-visibility:hidden;backface-visibility:hidden;transform-origin:0 0}.ldio div{box-sizing:content-box}</style><!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>--><script async="" src="https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js"></script><script>window.yaContextCb=window.yaContextCb||[]</script><script src="https://yandex.ru/ads/system/context.js" async=""></script><link rel="preconnect" href="https://yastatic.net/"><link rel="preconnect" href="https://avatars.mds.yandex.net/"><link rel="preconnect" href="https://mc.yandex.ru/"><link rel="preconnect" href="https://ads.adfox.ru"><script async="" crossorigin="anonymous" src="https://yastatic.net/safeframe-bundles/0.83/host.js"></script><link rel="preload" href="https://yastatic.net/s3/home/fonts/ys/3/text-variable-full.woff2" type="font/woff2" as="font" crossorigin="anonymous"><style id="ysTextCssRule">@font-face {
+        font-family: "YS Text Variable";
+        src: url("https://yastatic.net/s3/home/fonts/ys/3/text-variable-full.woff2") format("woff2");
+        font-weight: 400 700;
+        font-display: optional;
+    }</style><style type="text/css">.block-full-width{display:flex;justify-content:center;align-items:center;margin:20px 0;width:100%;max-width:100%;text-align:center;height:280px;max-height:280px;overflow:hidden}@media(max-width:1000px){.block-full-width{margin:20px auto;max-width:320px;background:#eee}}</style><style type="text/css">#ima{top:0;left:0;margin:0 auto;z-index:9999;display:flex;justify-content:center;align-items:center}#ima,.skip_ad{position:absolute;background:#000}.skip_ad{bottom:25px;right:0;color:#fff;border:1px solid #aaa;border-right:none;border-radius:4px 0 0 4px;padding:0 15px;font-size:16px;cursor:pointer;line-height:38px;z-index:99}.skip_ad:hover{border-color:#fff}.will_close{position:absolute;bottom:5px;right:0;color:#aaa;font-size:12px;z-index:99}.afg{z-index:98;max-height:80%}</style></head>
+
+
+
+<body>
+
+<div id="_BODY__"><div></div><div id="__layout"><div><div id="loader"><!----> <!----> <!----> <!----> <div><div id="game"><iframe onload="undefined" src="https://g.igroutka.ru/games/164/wA29XB1Jv5qcSZTy/2/subway_surfers_monaco/" width="100%" height="100%" scrolling="no" frameborder="0" allowfullscreen="true" sandbox="allow-pointer-lock allow-same-origin allow-scripts allow-modals"></iframe></div></div> <div id="more_g" style="position:absolute;top:0;right:0;z-index:1000;display:none;"><a href="/?utm_source=game_loader" target="_blank" title="Игроутка - бесплатные онлайн игры" class=""><img src="https://m.igroutka.ru/files/img/logo-mini.png" width="180" height="47" alt="Игроутка - бесплатные онлайн игры"></a></div> <a href="/?utm_source=game_lock" id="game_lock" target="_blank" style="display:none;position:absolute;top:0;right:0;left:0;bottom:0;width:100%;height:100%;z-index:999;" class=""></a> <!----></div></div></div></div><script>window._SCR__=(function(a,b,c,d,e,f,g){return {layout:"iframe",data:[{post:{game:{id:d,full_story:"Монако является очень привлекательным местом для многих людей. Ярые любители приключений Сабвей Серферы тоже решили отправиться сюда, для того чтобы, как обычно, покорить местный метрополитен. Красочное приключение на просторах метро Монако способно подарить незабываемые впечатления. ",title:"Сабвей Серф: Мировой Тур Монако",descr:"Монако является очень привлекательным местом для многих людей. Ярые любители приключений Сабвей Серферы тоже решили отправиться сюда, для того чтобы, как обычно, покорить местный метрополитен. Красочн",alt_name:"sabvey-serf-monako",metatitle:"Игра Сабвей Серф: Мировой Тур Монако",position:e,appstore:a,googleplay:a,allow_age:"3",production_date:a,devs:"KILOO & SYBO",template_class:a,mobile:b,emufile:a,emuname:a,emuflash:e,image:"\u002Fuploads\u002Fposts\u002F2022-11\u002Fthumbs\u002FSubwaySurfersWorldTourMonaco_16678200786368ea2ec539f5.59806654.jpg",rating:"1275",vote_num:"307",news_read:"89368",related_ids:"38661,36040,28756,36170,36834,26349,39414,40896,29723,40208,40397,40444,40091,36253,30657,25898,35815,40893,34962,36011,44518,41046,39021,43628",related_cats:"518,3,426,189,223,299,531,568,713,766",v:d,big_preview:"\u002Fuploads\u002Fposts\u002F2022-11\u002FSubwaySurfersWorldTourMonaco_16678200786368ea2ec539f5.59806654.jpg",url:"\u002Figry-subway-surfers\u002F46378-sabvey-serf-monako.html",total_raiting:4.2,raiting_width:71.4,fields:{"original-name":"Subway Surfers: World Tour Monaco",fulltext:"Перед игроком будет поставлена задача помочь серферу метро преодолеть как можно большее расстояние, бегая по железнодорожным рельсам между вагонами и другими препятствиями. Ни с одним из них персонажу нельзя столкнуться, иначе его бег закончится провалом. Важно помнить о том, что, чем дольше герой игры бежит, тем выше становится скорость его перемещения. Более того по мере продвижения по игре на игровом поле появляется все большее количество различного рода препятствий. Сабвей серфер сможет преодолевать их в том случае, если игрок будет помогать ему в этом своевременным нажатием нужных стрелок на клавиатуре. Сменить полосу движение можно, нажав стрелку «вправо» или «влево». Перепрыгнуть препятствие, либо, наоборот, проскользить под ним, можно при нажатии стрелок «вверх» и «вниз» соответственно. На пути встречаются различные временные бустеры. ",whatisgame:"webgl",mobile:b,iframegame:"https:\u002F\u002Fg.igroutka.ru\u002Fgames\u002F164\u002FwA29XB1Jv5qcSZTy\u002F2\u002Fsubway_surfers_monaco\u002F",iframegamewidth:"900",iframegameheight:"540",html5gamefullsize:b,sandbox2:b,move:{"control-1":"strelki","control-11":"Движение","control-2":"space","control-21":"Действие"}},category_name:"Subway Surfers",category_slug:"igry-subway-surfers",category_id:"518"}}}],fetch:{},error:f,state:{history_counter:g,favorite_counter:g,se_catch:c,game_start:c,loading:c,sort:"default"},serverRendered:true,routePath:"\u002Floader\u002Fgame\u002F46378\u002F",config:{_app:{basePath:"\u002F",assetsPath:"\u002Fbuild\u002F",cdnURL:f}}}}("","1",false,"46378","0",null,0));</script><script>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()},!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script><script nomodule="" src="/build/js/6fbcdf2ba9c2e9fdb04d.js" defer=""></script><script type="module" src="/build/js/ec2f5bfc8aec6b2d7683.js" defer=""></script><script nomodule="" src="/build/js/dd884f4f4bbc2801dd50.js" defer=""></script><script type="module" src="/build/js/300c7e82747cf8193633.js" defer=""></script><script nomodule="" src="/build/js/dd9a5d7654aa19de4be0.js" defer=""></script><script type="module" src="/build/js/b8a8a6dd5eac8fe4ab83.js" defer=""></script><script nomodule="" src="/build/js/cf1e958fdb31e67df6f2.js" defer=""></script><script type="module" src="/build/js/2740789a418e4849348d.js" defer=""></script><script nomodule="" src="/build/js/9005b0d981b1cb9e4197.js" defer=""></script><script type="module" src="/build/js/748598fd30c4abffbfdd.js" defer=""></script><script nomodule="" src="/build/js/686242c8ec9854d37ce5.js" defer=""></script><script type="module" src="/build/js/1b2d835764b8669bdf25.js" defer=""></script><script nomodule="" src="/build/js/bcd47c0ef1cbc4330d01.js" defer=""></script><script type="module" src="/build/js/1d43413dcc67da62829b.js" defer=""></script>
+</body>
 </html>
